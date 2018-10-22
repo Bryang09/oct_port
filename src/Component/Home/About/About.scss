@@ -1,8 +1,39 @@
 .About {
-  height: 60vh;
-  background: url("https://images.unsplash.com/photo-1531693724259-4a7320a99b7a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1b4f80f982ae280490c60c316a22ef0f&auto=format&fit=crop&w=1350&q=80")
-    no-repeat center center / cover;
+  min-height: 60vh;
+  max-height: auto;
+  background: radial-gradient(#2ca2d3, #345af5);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  color: #fff;
+
+  h1 {
+    font-weight: 400;
+    font-size: 3em;
+  }
+
+  h3 {
+    font-weight: 300;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .Icons {
+    a {
+      color: #fff;
+      margin: 2vh 1vw;
+      i {
+        color: #fff;
+      }
+    }
+  }
+
+  h5 {
+    font-weight: 400;
+    border: 1px solid #fff;
+    padding: 1vh 2vw;
+    font-size: 2em;
+  }
 }

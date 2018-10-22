@@ -1,4 +1,4 @@
-$primary: #1283de;
+$primary: #44a6f5;
 
 .Projects {
   height: 100%;
@@ -34,6 +34,10 @@ $primary: #1283de;
         background: $primary;
       }
     }
+
+    .Fill {
+      background: $primary;
+    }
   }
 }
 
@@ -44,6 +48,7 @@ $primary: #1283de;
   margin-top: 5vh;
   display: flex;
   flex-wrap: wrap;
+  transition-duration: 1s;
 
   .Project {
     width: 30%;
@@ -61,7 +66,6 @@ $primary: #1283de;
       justify-content: center;
       align-items: center;
       text-align: center;
-      cursor: pointer;
 
       &:hover {
         background: linear-gradient(
@@ -81,6 +85,26 @@ $primary: #1283de;
         font-weight: 300;
         width: 90%;
         margin: 0 auto;
+      }
+
+      .options {
+        display: flex;
+        width: 60%;
+        margin: 4vh 0;
+
+        a {
+          margin: 0 0.5vw;
+          flex-grow: 1;
+          text-decoration: none;
+          color: #fff;
+        }
+
+        h5 {
+          border: 1px solid #fff;
+          line-height: 2.5;
+          width: 100%;
+          margin: 0;
+        }
       }
     }
   }
