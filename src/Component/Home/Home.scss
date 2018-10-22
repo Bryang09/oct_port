@@ -1,0 +1,68 @@
+@media screen and (max-width: 1170px) {
+  .Hero h3 {
+    width: 75%;
+    line-height: 30px;
+  }
+
+  .About {
+    height: 80vh;
+
+    h3 {
+      line-height: 30px;
+    }
+  }
+
+  .ProjectsDiv {
+    width: 85%;
+
+    .Project {
+      width: 45%;
+      margin: 2vh 2.5%;
+
+      .Text .options {
+        width: 80%;
+
+        a {
+          margin: 0 0.8vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Hero {
+    h1 {
+      font-size: 3em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    h3 {
+      width: 90%;
+    }
+  }
+
+  .About {
+    height: 90vh;
+  }
+
+  .ProjectsDiv {
+    width: 85%;
+
+    .Project {
+      width: 95%;
+      margin: 2vh 2.5%;
+
+      .Text .options {
+        width: 80%;
+
+        a {
+          margin: 0 2vw;
+        }
+      }
+    }
+  }
+}
