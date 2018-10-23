@@ -46,7 +46,17 @@
   }
 
   .About {
-    height: 90vh;
+    height: 100%;
+
+    h5 {
+      width: 70%;
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    .Icons {
+      margin-bottom: 5vh;
+    }
   }
 
   .ProjectsDiv {
@@ -55,6 +65,7 @@
     .Project {
       width: 95%;
       margin: 2vh 2.5%;
+      height: 35vh;
 
       .Text .options {
         width: 80%;

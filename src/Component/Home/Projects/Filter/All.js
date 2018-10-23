@@ -17,10 +17,10 @@ const All = props => {
           <h2>{res.title}</h2>
           <h3>{res.desc}</h3>
           <div className="options">
-            <a href={res.demo} target="_blank">
+            <a href={res.demo} target="_blank" rel="noopener noreferrer">
               <h5 className="Demo">Demo</h5>
             </a>
-            <a href={res.code} target="_blank">
+            <a href={res.code} target="_blank" rel="noopener noreferrer">
               <h5 className="Code">Code</h5>
             </a>
           </div>

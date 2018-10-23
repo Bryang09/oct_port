@@ -18,13 +18,25 @@ const About = () => {
       </h3>
       <h5>Feel Free To Contact Me</h5>
       <div className="Icons">
-        <a href="https://github.com/Bryang09" target="_blank">
+        <a
+          href="https://github.com/Bryang09"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fab fa-github fa-3x" />
         </a>
-        <a href="https://github.com/Bryang09" target="_blank">
+        <a
+          href="https://github.com/Bryang09"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fab fa-linkedin fa-3x" />
         </a>
-        <a href="https://github.com/Bryang09" target="_blank">
+        <a
+          href="https://github.com/Bryang09"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fas fa-envelope fa-3x" />
         </a>
       </div>
