@@ -7,7 +7,7 @@ const All = props => {
         className="Project"
         key={res.id}
         style={{
-          backgroundImage: `url(/Images/${res.src})`,
+          backgroundImage: `url(/${res.src})`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
           backgroundRepeat: "no-repeat"
