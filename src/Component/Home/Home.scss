@@ -77,3 +77,10 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .Projects .Categories h5 {
+    font-size: 0.5em;
+    padding: 6px 16px;
+  }
+}
