@@ -42,6 +42,22 @@ $primary: #44a6f5;
     font-weight: 400;
     margin: 1vh 0;
     letter-spacing: 0.3vw;
+    animation: desc 1.5s forwards 0s linear;
+  }
+
+  @keyframes desc {
+    0% {
+      transform: rotate(xx) translateX(-500%);
+      opacity: 0;
+    }
+    50% {
+      transform: rotate(xx) translateX(0);
+      opacity: 0.5;
+    }
+    100% {
+      transform: rotate(xx);
+      opacity: 1;
+    }
   }
 
   h3 {
