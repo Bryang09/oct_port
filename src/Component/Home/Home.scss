@@ -12,8 +12,13 @@
     }
   }
 
+  .Projects {
+    height: 1400px;
+  }
+
   .ProjectsDiv {
     width: 85%;
+    height: 50%;
 
     .Project {
       width: 45%;
@@ -59,6 +64,10 @@
     }
   }
 
+  .Projects {
+    height: 270vh;
+  }
+
   .ProjectsDiv {
     width: 85%;
 
@@ -79,7 +88,10 @@
 }
 
 @media screen and (max-width: 500px) {
-  .Projects .Categories h5 {
+  .Projects {
+    height: 290vh;
+  }
+  .Categories h5 {
     font-size: 0.5em;
     padding: 6px 16px;
   }
