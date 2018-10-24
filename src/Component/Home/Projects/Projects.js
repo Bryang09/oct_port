@@ -23,7 +23,7 @@ class Projects extends Component {
       // prettier-ignore
       { id: 3, src: "movies.jpg", title: "The Movies App", desc: "An application that makes use of the MovieDB api, this app gives a description for any movie.", react: true, reactrouter: false, axios: true, flexbox: true, sass: false, code: "https://github.com/Bryang09/movies",  demo: "https://bryang09.github.io/movies/#/" },
       // prettier-ignore
-      { id: 4, src: "recipes.png",  title: "The Recipes App", desc: "An application that makes use of the Food2Fork api, this app will search for any recipe.", react: true, reactrouter: true, axios: true, flexbox: true, sass: false, code: "https://github.com/Bryang09/recipes", demo: "https://bryang09.github.io/recipes/#/" },
+      { id: 4, src: "recipes.png",  title: "The Recipes App", desc: "An application that makes use of the Food2Fork api, this app will search for any recipe.", react: true, reactrouter: true, axios: true, flexbox: true, sass: false, code: "https://github.com/Bryang09/recipe", demo: "https://bryang09.github.io/recipe/#/" },
       // prettier-ignore
       { id: 5, src: "shelter.png", title: "The Shelter App", desc: "An application that makes use of the PetFinder api, this app will search for any shelter/pet near you.", react: true, reactrouter: true, axios: true, flexbox: true, sass: false, code: "https://github.com/Bryang09/shelter", demo: "https://bryang09.github.io/shelter/#/" }
     ],
