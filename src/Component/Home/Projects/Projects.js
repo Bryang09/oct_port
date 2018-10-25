@@ -41,11 +41,11 @@ class Projects extends Component {
 
   onAll = () => {
     // prettier-ignore
-    this.setState({ all: !this.state.all, react: false, reactr: false, axios: false, flexbox: false, sass: false });
+    this.setState({ all: true, react: false, reactr: false, axios: false, flexbox: false, sass: false });
   };
   onReact = () => {
     // prettier-ignore
-    this.setState({ all: false, react: !this.state.react, reactr: false, axios: false, flexbox: false, sass: false, mern: false });
+    this.setState({ all: false, react: true, reactr: false, axios: false, flexbox: false, sass: false, mern: false });
   };
 
   onRouter = () => {
@@ -55,22 +55,22 @@ class Projects extends Component {
 
   onSass = () => {
     // prettier-ignore
-    this.setState({ all: false, react: false, reactr: false, axios: false, flexbox: false, sass: !this.state.sass, mern: false });
+    this.setState({ all: false, react: false, reactr: false, axios: false, flexbox: false, sass: true, mern: false });
   };
 
   onAxios = () => {
     // prettier-ignore
-    this.setState({ all: false, react: false, reactr: false, axios: !this.state.axios, flexbox: false, sass: false, mern: false });
+    this.setState({ all: false, react: false, reactr: false, axios: true, flexbox: false, sass: false, mern: false });
   };
 
   onFlexBox = () => {
     // prettier-ignore
-    this.setState({ all: false, react: false, reactr: false, axios: false, flexbox: !this.state.flexbox, sass: false, mern: false });
+    this.setState({ all: false, react: false, reactr: false, axios: false, flexbox: true, sass: false, mern: false });
   };
 
   onMern = () => {
     // prettier-ignore
-    this.setState({ all: false, react: false, reactr: false, axios: false, flexbox: false ,mern: !this.state.mern, sass: false,  });
+    this.setState({ all: false, react: false, reactr: false, axios: false, flexbox: false ,mern: true, sass: false,  });
   };
 
   render() {
