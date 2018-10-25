@@ -16,7 +16,7 @@ class Projects extends Component {
   state = {
     projects: [
       // prettier-ignore
-      {  id: 6, src: "watches.jpg", title: "Watches App", desc: "An online store that specializes in Watches.", react: true, reactrouter: true, axios: true, flexbox: true, sass: false, mern: true, code: "https://github.com/Bryang09/trainer", demo: "https://bryang09.github.io/trainer/#/" },
+      {  id: 6, src: "watches.jpg", title: "Watches App", desc: "An online store that specializes in Watches.", react: true, reactrouter: true, axios: true, flexbox: true, sass: false, mern: true, code: "https://github.com/Bryang09/watches", demo: "https://intense-bayou-29884.herokuapp.com/#/" },
       // prettier-ignore
       {  id: 0, src: "trainer.png", title: "Trainer App", desc: "This is a landing page for a personal trainer.", react: true, reactrouter: false, axios: false, flexbox: true, sass: true, code: "https://github.com/Bryang09/trainer", demo: "https://bryang09.github.io/trainer/#/" },
       // prettier-ignore
