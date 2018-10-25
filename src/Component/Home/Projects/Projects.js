@@ -8,12 +8,15 @@ import Router from "./Filter/Router";
 import Sass from "./Filter/Sass";
 import Axios from "./Filter/Axios";
 import Flexbox from "./Filter/Flexbox";
+import Mern from "./Filter/Mern";
 
 import Menu from "./Menu";
 
 class Projects extends Component {
   state = {
     projects: [
+      // prettier-ignore
+      {  id: 6, src: "watches.jpg", title: "Watches App", desc: "An online store that specializes in Watches.", react: true, reactrouter: true, axios: true, flexbox: true, sass: false, mern: true, code: "https://github.com/Bryang09/trainer", demo: "https://bryang09.github.io/trainer/#/" },
       // prettier-ignore
       {  id: 0, src: "trainer.png", title: "Trainer App", desc: "This is a landing page for a personal trainer.", react: true, reactrouter: false, axios: false, flexbox: true, sass: true, code: "https://github.com/Bryang09/trainer", demo: "https://bryang09.github.io/trainer/#/" },
       // prettier-ignore
@@ -32,7 +35,8 @@ class Projects extends Component {
     reactr: false,
     axios: false,
     flexbox: false,
-    sass: false
+    sass: false,
+    mern: false
   };
 
   onAll = () => {
@@ -41,27 +45,32 @@ class Projects extends Component {
   };
   onReact = () => {
     // prettier-ignore
-    this.setState({ all: false, react: !this.state.react, reactr: false, axios: false, flexbox: false, sass: false });
+    this.setState({ all: false, react: !this.state.react, reactr: false, axios: false, flexbox: false, sass: false, mern: false });
   };
 
   onRouter = () => {
     // prettier-ignore
-    this.setState({ all: false, react: false,  reactr: true, axios: false, flexbox: false, sass: false });
+    this.setState({ all: false, react: false,  reactr: true, axios: false, flexbox: false, sass: false, mern: false });
   };
 
   onSass = () => {
     // prettier-ignore
-    this.setState({ all: false, react: false, reactr: false, axios: false, flexbox: false, sass: !this.state.sass });
+    this.setState({ all: false, react: false, reactr: false, axios: false, flexbox: false, sass: !this.state.sass, mern: false });
   };
 
   onAxios = () => {
     // prettier-ignore
-    this.setState({ all: false, react: false, reactr: false, axios: !this.state.axios, flexbox: false, sass: false });
+    this.setState({ all: false, react: false, reactr: false, axios: !this.state.axios, flexbox: false, sass: false, mern: false });
   };
 
   onFlexBox = () => {
     // prettier-ignore
-    this.setState({ all: false, react: false, reactr: false, axios: false, flexbox: !this.state.flexbox, sass: false });
+    this.setState({ all: false, react: false, reactr: false, axios: false, flexbox: !this.state.flexbox, sass: false, mern: false });
+  };
+
+  onMern = () => {
+    // prettier-ignore
+    this.setState({ all: false, react: false, reactr: false, axios: false, flexbox: false ,mern: !this.state.mern, sass: false,  });
   };
 
   render() {
@@ -72,7 +81,7 @@ class Projects extends Component {
         </h1>
         <div className="Categories">
           {/* prettier-ignore */}
-          <Menu onAll={this.onAll} all={this.state.all}  onReact={this.onReact} react={this.state.react} onRouter={this.onRouter} onAxios={this.onAxios} axios={this.state.axios} onFlexBox={this.onFlexBox} flexbox={this.state.flexbox} onSass={this.onSass} sass={this.state.sass}  />
+          <Menu onAll={this.onAll} all={this.state.all}  onReact={this.onReact} react={this.state.react} onRouter={this.onRouter} reactr={this.state.reactr} onAxios={this.onAxios} axios={this.state.axios} onFlexBox={this.onFlexBox} flexbox={this.state.flexbox} onSass={this.onSass} sass={this.state.sass} onMern={this.onMern} mern={this.state.mern} />
         </div>
         <div className="ProjectsDiv">
           {this.state.all ? (
@@ -87,6 +96,8 @@ class Projects extends Component {
             <Axios list={this.state.projects} />
           ) : this.state.flexbox ? (
             <Flexbox list={this.state.projects} />
+          ) : this.state.mern ? (
+            <Mern list={this.state.projects} />
           ) : null}
         </div>
       </div>

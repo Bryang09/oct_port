@@ -21,6 +21,9 @@ const Menu = props => {
       <h5 onClick={props.onSass} className={props.sass ? "Fill" : null}>
         Sass
       </h5>
+      <h5 onClick={props.onMern} className={props.mern ? "Fill" : null}>
+        MERN
+      </h5>
     </div>
   );
 };

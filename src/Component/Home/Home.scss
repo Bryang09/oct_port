@@ -13,7 +13,7 @@
   }
 
   .Projects {
-    height: 1400px;
+    min-height: 170vh;
   }
 
   .ProjectsDiv {
@@ -65,7 +65,7 @@
   }
 
   .Projects {
-    height: 270vh;
+    min-height: 310vh;
 
     .Categories {
       width: 90%;
@@ -96,7 +96,7 @@
     height: 290vh;
 
     .Categories h5 {
-      font-size: 0.5em;
+      font-size: 0.7em;
       padding: 6px 16px;
     }
   }
