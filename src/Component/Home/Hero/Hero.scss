@@ -1,80 +1,88 @@
 $primary: #44a6f5;
 
 .Hero {
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-0.3.5&s=5fdcba5a9cd5865638cd2086f09f93ac&auto=format&fit=crop&w=1352&q=80")
-      no-repeat center center / cover;
-  // background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // margin: 20px;
-  flex-direction: column;
-  background-attachment: fixed;
+  height: 80vh;
+  background: linear-gradient(135deg, #2ca2d3, #345af5);
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // flex-direction: column;
+  clip-path: polygon(0 0, 100% 0, 100% 63%, 50% 55%, 0 63%);
 
-  h1 {
-    color: #fff;
-    font-size: 4em;
-    font-weight: 400;
-    margin-bottom: 1vh;
-    text-align: center;
-    animation: name 1.5s ease;
+  .HeroText {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
-    @keyframes name {
+    h1 {
+      color: #fff;
+      font-size: 4em;
+      font-weight: 300;
+      margin-bottom: 1vh;
+      text-align: center;
+      animation: name 1.5s ease;
+
+      @keyframes name {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 2em;
+      font-weight: 400;
+      margin: 1vh 0;
+      letter-spacing: 0.3vw;
+      animation: desc 1.5s forwards 0s linear;
+    }
+
+    @keyframes desc {
       0% {
+        transform: translateX(-500%);
         opacity: 0;
+      }
+      50% {
+        transform: translateX(0);
+        opacity: 0.5;
       }
       100% {
         opacity: 1;
       }
     }
 
-    span {
-      font-weight: 600;
-      color: $primary;
+    h3 {
+      color: #fff;
+      font-weight: 300;
+      width: 60%;
+      text-align: center;
+      font-size: 1.2em;
+      animation: text 1s forwards 0s ease-in-out;
+    }
+
+    @keyframes text {
+      0% {
+        transform: translateY(5000%);
+      }
+      100% {
+        transform: translateY(0);
+      }
     }
   }
 
-  h2 {
-    color: #fff;
-    font-size: 2em;
-    font-weight: 400;
-    margin: 1vh 0;
-    letter-spacing: 0.3vw;
-    animation: desc 1.5s forwards 0s linear;
-  }
-
-  @keyframes desc {
-    0% {
-      transform: rotate(xx) translateX(-500%);
-      opacity: 0;
-    }
-    50% {
-      transform: rotate(xx) translateX(0);
-      opacity: 0.5;
-    }
-    100% {
-      transform: rotate(xx);
-      opacity: 1;
-    }
-  }
-
-  h3 {
-    color: #fff;
-    font-weight: 300;
-    width: 60%;
-    text-align: center;
-    font-size: 1.2em;
-    animation: text 1s forwards 0s ease-in-out;
-  }
-
-  @keyframes text {
-    0% {
-      transform: translateY(5000%);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
+  // .side2 {
+  //   background: purple;
+  //   width: 100%;
+  //   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  // }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 
-const All = props => {
-  const all = props.list.map(res => {
+const angular = props => {
+  const list = props.list.filter(fil => fil.angular).map(res => {
     return (
       <div
         className="Project"
@@ -13,7 +13,7 @@ const All = props => {
           backgroundRepeat: "no-repeat"
         }}
       >
-        <div className={res.angular ? "AngText" : "Text"}>
+        <div className="AngText">
           <h2>{res.title}</h2>
           <h3>{res.desc}</h3>
           <div className="options">
@@ -29,7 +29,7 @@ const All = props => {
     );
   });
 
-  return all;
+  return list;
 };
 
-export default All;
+export default angular;

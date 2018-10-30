@@ -2,6 +2,7 @@ import React from "react";
 
 const Sass = props => {
   const list = props.list.filter(fil => fil.sass).map(res => {
+    console.log(res);
     return (
       <div
         className="Project"
@@ -13,7 +14,7 @@ const Sass = props => {
           backgroundRepeat: "no-repeat"
         }}
       >
-        <div className="Text">
+        <div className={res.angular ? "AngText" : "Text"}>
           <h2>{res.title}</h2>
           <h3>{res.desc}</h3>
           <div className="options">

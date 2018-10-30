@@ -13,7 +13,7 @@ const Flex = props => {
           backgroundRepeat: "no-repeat"
         }}
       >
-        <div className="Text">
+        <div className={res.angular ? "AngText" : "Text"}>
           <h2>{res.title}</h2>
           <h3>{res.desc}</h3>
           <div className="options">

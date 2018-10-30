@@ -1,11 +1,12 @@
 $primary: #44a6f5;
 $gradient1: #1db8e7;
 $gradient2: #0be290;
+$angular: #ff3333;
 
 .Projects {
   min-height: 130vh;
-  padding-top: 5vh;
   background: #000;
+  margin-top: -20vh;
 
   h1 {
     text-align: center;
@@ -26,9 +27,9 @@ $gradient2: #0be290;
     margin: 2vh auto 0;
     flex-wrap: wrap;
 
-    h5 {
+    .react {
+      border: 1px solid $primary;
       margin: 1vh 0.8vw;
-      border: 2px solid $primary;
       padding: 10px 30px;
       border-radius: 35px;
       cursor: pointer;
@@ -40,8 +41,41 @@ $gradient2: #0be290;
       }
     }
 
+    .angular {
+      margin: 1vh 0.8vw;
+      border: 1px solid red;
+      padding: 10px 30px;
+      border-radius: 35px;
+      cursor: pointer;
+      color: #fff;
+      font-weight: 400;
+
+      &:hover {
+        background: #ff3333;
+      }
+    }
+
+    .other {
+      // /#eaf544
+      margin: 1vh 0.8vw;
+      border: 1px solid #eaf544;
+      padding: 10px 30px;
+      border-radius: 35px;
+      cursor: pointer;
+      color: #fff;
+      font-weight: 400;
+
+      &:hover {
+        background: #eaf544;
+      }
+    }
+
     .Fill {
       background: $primary;
+    }
+
+    .NgFill {
+      background: red;
     }
   }
 }
@@ -60,8 +94,19 @@ $gradient2: #0be290;
     margin: 2vh 1.5%;
     height: 30vh;
     // box-shadow: 1px 15px 80px #8d8d8d;
+    animation: 1s project ease-in;
 
-    .Text {
+    @keyframes project {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .Text,
+    .AngText {
       display: flex;
       flex-direction: column;
       color: #fff;
@@ -104,6 +149,14 @@ $gradient2: #0be290;
           width: 100%;
           margin: 0;
         }
+      }
+    }
+
+    .AngText {
+      &:hover {
+        background: linear-gradient(45deg, $angular, #7f0e0e);
+        opacity: 1;
+        transition-duration: 0.5s;
       }
     }
   }
