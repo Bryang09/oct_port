@@ -45,7 +45,7 @@ class Projects extends Component {
 
   onAll = () => {
     // prettier-ignore
-    this.setState({ all: true, react: false, reactr: false, axios: false, flexbox: false, sass: false, angular: false });
+    this.setState({ all: true, react: false, reactr: false, axios: false, flexbox: false, sass: false, mern: false, angular: false });
   };
   onReact = () => {
     // prettier-ignore
