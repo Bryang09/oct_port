@@ -29,7 +29,8 @@
       width: 45%;
       margin: 2vh 2.5%;
 
-      .Text .options {
+      .Text .options,
+      .AngText .options {
         width: 80%;
 
         a {
@@ -86,9 +87,9 @@
       margin: 2vh 2.5%;
       height: 35vh;
 
-      .Text .options {
+      .Text .options,
+      .AngText .options {
         width: 80%;
-
         a {
           margin: 0 2vw;
         }
