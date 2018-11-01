@@ -26,17 +26,13 @@ const About = () => {
           <i className="fab fa-github fa-3x" />
         </a>
         <a
-          href="https://github.com/Bryang09"
+          href="https://www.linkedin.com/in/bryan-gonzalez09/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <i className="fab fa-linkedin fa-3x" />
         </a>
-        <a
-          href="https://github.com/Bryang09"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="mailto:bryan.gonzalez1020.bg@gmail.com">
           <i className="fas fa-envelope fa-3x" />
         </a>
       </div>
