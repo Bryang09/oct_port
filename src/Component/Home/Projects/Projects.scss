@@ -2,6 +2,8 @@ $primary: #44a6f5;
 $gradient1: #1db8e7;
 $gradient2: #0be290;
 $angular: #ff3333;
+$axios: #f5df44;
+$sass: #f544f0;
 
 .Projects {
   min-height: 130vh;
@@ -27,7 +29,10 @@ $angular: #ff3333;
     margin: 2vh auto 0;
     flex-wrap: wrap;
 
-    .react {
+    .react,
+    .angular,
+    .axios,
+    .sass {
       border: 1px solid $primary;
       margin: 1vh 0.8vw;
       padding: 10px 30px;
@@ -42,31 +47,23 @@ $angular: #ff3333;
     }
 
     .angular {
-      margin: 1vh 0.8vw;
-      border: 1px solid red;
-      padding: 10px 30px;
-      border-radius: 35px;
-      cursor: pointer;
-      color: #fff;
-      font-weight: 400;
+      border: 1px solid $angular;
 
       &:hover {
         background: #ff3333;
       }
     }
 
-    .other {
-      // /#eaf544
-      margin: 1vh 0.8vw;
-      border: 1px solid #eaf544;
-      padding: 10px 30px;
-      border-radius: 35px;
-      cursor: pointer;
-      color: #fff;
-      font-weight: 400;
-
+    .axios {
+      border: 1px solid $axios;
       &:hover {
-        background: #eaf544;
+        background: $axios;
+      }
+    }
+    .sass {
+      border: 1px solid $sass;
+      &:hover {
+        background: $sass;
       }
     }
 
@@ -76,6 +73,12 @@ $angular: #ff3333;
 
     .NgFill {
       background: red;
+    }
+    .AxiosFill {
+      background: $axios;
+    }
+    .SassFill {
+      background: $sass;
     }
   }
 }
